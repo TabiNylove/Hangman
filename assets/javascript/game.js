@@ -21,10 +21,13 @@ var random =
 var randomWord = word[random];
 	console.log("Random Word: " + randomWord);
 
+//make a blank array to store underscores
 var underscoreLine = [];
+
 for (var i = 0; i < randomWord.length; i++) {
 
 	underscoreLine.push("_ ");
 
 }
+//document.getElementById('underscoreLine').innerHTML = underscoreLine;
 console.log("Word: " + underscoreLine);
