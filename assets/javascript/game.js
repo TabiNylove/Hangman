@@ -1,3 +1,4 @@
+//WORD SELECTION
 var word = [
 	["s", "e", "r", "e", "n", "d", "i", "p", "i", "t", "y"],
 
@@ -20,14 +21,21 @@ var random =
 //pull the array that matches the number and record in console
 var randomWord = word[random];
 	console.log("Random Word: " + randomWord);
+//==============================================================================
 
+//UNDERSCORE
 //make a blank array to store underscores
 var underscoreLine = [];
 
+//for each letter, push an underscore into the array
 for (var i = 0; i < randomWord.length; i++) {
 
 	underscoreLine.push("_ ");
-
 }
-//document.getElementById('underscoreLine').innerHTML = underscoreLine;
+
+//show the array in html and console
+document.getElementById('underscoreLine').innerHTML = underscoreLine;
 console.log("Word: " + underscoreLine);
+
+
+
