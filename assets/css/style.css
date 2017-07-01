@@ -1,3 +1,32 @@
+#directions {
+	display: block;
+}
+
+#wrongDiv {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#wrongGuess {
+	float: left;
+	margin-left: 40%;
+	padding-bottom: 15px;
+}
+
+#guessNum {
+	padding-left: 7%;
+	padding-bottom: 15px;
+}
+
+#underscoreDiv {
+	font-size: 2em;
+	padding-bottom: 20px;
+}
+
+#wrongLetter {
+	clear: both;
+}
+
 body {
 	background-color: pink;
 	text-align: center;
@@ -14,13 +43,5 @@ h2 {
 
 p {
 	display: inline;
-}
-
-#directions {
-	display: block;
-}
-#underscoreDiv {
-	font-size: 2em;
-	padding-bottom: 20px;
 }
 

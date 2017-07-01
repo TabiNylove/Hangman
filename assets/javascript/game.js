@@ -58,7 +58,7 @@ var word = [
 
 //PRESSING KEYS
 
-	var guessCounter = 6;
+	var guessCounter = 8;
 	var guessNum = document.getElementById("guessNum")
 	guessNum.innerHTML = guessCounter;
 
@@ -69,36 +69,36 @@ var word = [
 		// keystroke will become var "userKey"
   		let userKey = event.key;
 
-  		// if keystroke matches a letter in the random word ...
+  		
   		for (var i = 0; i < randomWord.length; i++) {
 
+  			// if keystroke matches a letter in the random word ...
   			if (randomWord[i] === userKey) {
 
   				// ... replace "_ " with the corresponding letter
   				document.getElementById(i).innerHTML = userKey + " ";
   				console.log("Yes: " + userKey);
-
+  				var correct = true;
+			} 
+  		}
   		// if keystroke is wrong----
-  			// } else if (guessCounter === 0) {
+  		if (!correct) {
 
-  			// 	// this is game over
-  			// 	alert("You can't see it, but your man has been hanged. Oops.")
+  			// this adds the letter to a <p> tag
+  			var wrongLetter = document.getElementById("wrongLetter");
+  			var wLetterChild = document.createTextNode(userKey + " ");
+  			wrongLetter.appendChild(wLetterChild);
 
-  			} else if (randomWord[i] !== userKey) {
+  			// this decreases the guessCounter
+  			guessCounter = guessCounter - 1;
+  			guessNum.innerHTML = guessCounter;
+  			console.log("No: " + userKey);
 
-  				// this adds the letter to a <p> tag
-  				var wrongLetter = document.getElementById("wrongLetter");
-  				var wLetterChild = document.createTextNode(userKey + " ");
-  				wrongLetter.appendChild(wLetterChild);
-
-  				// this decreases the guessCounter
-  				guessCounter = guessCounter - 1;
-  				guessNum.innerHTML = guessCounter;
-  				console.log("No: " + userKey);
-  			}
+  			} else if (guessCounter === 0) {
+  				// this is game over
+  				alert("You can't see it, but your man has been hanged. Oops.")
 
   		}
-  		
 	}, true);
 
 
