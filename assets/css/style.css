@@ -12,7 +12,15 @@ h2 {
 	padding-bottom: 30px;
 }
 
-#underscoreLine {
+p {
+	display: inline;
+}
+
+#directions {
+	display: block;
+}
+#underscoreDiv {
 	font-size: 2em;
 	padding-bottom: 20px;
 }
+
