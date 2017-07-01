@@ -1,3 +1,8 @@
+body {
+	background-color: pink;
+	text-align: center;
+}
+
 #directions {
 	display: block;
 }
@@ -7,14 +12,14 @@
 	justify-content: flex-start;
 }
 
-#wrongGuess {
+#guessLeft {
 	float: left;
-	margin-left: 40%;
 	padding-bottom: 15px;
+	margin-left: 45%;
 }
 
 #guessNum {
-	padding-left: 7%;
+	padding-left: 2%;
 	padding-bottom: 15px;
 }
 
@@ -25,11 +30,7 @@
 
 #wrongLetter {
 	clear: both;
-}
-
-body {
-	background-color: pink;
-	text-align: center;
+	font-size: 2em;
 }
 
 h1 {
